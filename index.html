@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sistema em 48h — Aprenda a construir com IA por dentro</title>
-  <meta name="description" content="Veja o processo real do Lucas para sair de uma ideia solta para um sistema funcionando com IA. Workspace, build session, prompts e método.">
+  <title>Modo Arquiteto — Como eu construo com Claude Code</title>
+  <meta name="description" content="Entra no meu workspace, me vê construir um sistema real pra minha empresa e leva embora o método, as skills e o jeito de pensar Claude Code que eu uso todo dia.">
   <style>
     :root {
       --graphite: #171717;
@@ -289,35 +289,6 @@
       font-size: 12px;
     }
 
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 12px;
-      padding-top: 26px;
-    }
-
-    .stat {
-      min-height: 116px;
-      display: grid;
-      align-content: end;
-      padding: 16px;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background: rgba(255,250,241,.78);
-    }
-
-    .stat strong {
-      display: block;
-      font-size: clamp(25px, 3vw, 40px);
-      line-height: 1;
-      margin-bottom: 8px;
-    }
-
-    .stat span {
-      color: var(--muted);
-      font-size: 13px;
-    }
-
     section {
       padding: 78px 0 0;
       scroll-margin-top: 80px;
@@ -599,7 +570,6 @@
       .cols-4 {
         grid-template-columns: 1fr;
       }
-      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .section-head { display: block; }
       .section-head p { margin-top: 10px; }
       .product-card { min-height: auto; }
@@ -608,32 +578,30 @@
     @media (max-width: 560px) {
       .shell { width: min(100% - 28px, 1180px); }
       .hero { padding-top: 48px; }
-      .stats { grid-template-columns: 1fr; }
+      .price { align-items: flex-start; flex-direction: column; gap: 6px; }
+      .price small { margin-bottom: 0; }
       .process-step,
       .flow-step {
         grid-template-columns: 1fr;
       }
-      .price { align-items: flex-start; flex-direction: column; gap: 6px; }
-      .price small { margin-bottom: 0; }
     }
   </style>
 </head>
 <body>
   <header class="topbar">
     <div class="shell">
-      <a class="brand" href="#top" aria-label="Sistema em 48h">
+      <a class="brand" href="#top" aria-label="Modo Arquiteto">
         <span class="mark">
           <svg viewBox="0 0 64 64" width="24" height="24" aria-hidden="true">
             <path d="M16 15h32v10H27v9h17v10H16V34h11v-9H16z" fill="currentColor"/>
             <path d="M44 39h6v10h-6zM35 39h6v10h-6z" fill="#0f766e"/>
           </svg>
         </span>
-        Sistema em 48h
+        Modo Arquiteto
       </a>
       <nav aria-label="Navegação principal">
-        <a href="#dor">Por que trava</a>
-        <a href="#processo">O processo</a>
-        <a href="#inclui">O que vem</a>
+        <a href="#processo">Como funciona</a>
+        <a href="#inclui">O que vem dentro</a>
         <a href="#preco" class="nav-cta">Acessar</a>
       </nav>
     </div>
@@ -643,19 +611,19 @@
     <section class="hero">
       <div class="shell hero-grid">
         <div>
-          <div class="eyebrow">Imersão prática para destravar IA coding</div>
-          <h1>Aprenda o jeito certo de construir com IA vendo meu processo por dentro.</h1>
-          <p class="hero-copy">Eu vou te mostrar como saio de uma ideia solta para um sistema funcionando usando Claude Code/Codex: o raciocínio, os prompts, as decisões, os cortes e os ajustes que fazem a ferramenta finalmente clicar.</p>
+          <div class="eyebrow">Lucas Pit · Lançamento</div>
+          <h1>Como eu construo com Claude Code.</h1>
+          <p class="hero-copy">Você entra no meu workspace, me vê construir um sistema pra automatizar um setor da minha empresa e leva embora o jeito de pensar, o método e as skills que eu uso todo dia.</p>
           <ul class="hero-bullets">
-            <li><span class="dot"></span><span>Para quem sabe que IA é poderosa, mas sente que ainda está usando errado.</span></li>
-            <li><span class="dot"></span><span>Para quem vê gente construindo coisa absurda e quer entender o caminho real por trás.</span></li>
-            <li><span class="dot"></span><span>Para quem quer tirar uma ideia do papel sem depender de meses de estudo ou de tentativa cega.</span></li>
+            <li><span class="dot"></span><span>Pra quem já mexe com Claude Code mas sente que tá usando uma fração do que ele dá.</span></li>
+            <li><span class="dot"></span><span>Pra quem cansou de tutorial genérico e quer ver alguém construindo algo de verdade.</span></li>
+            <li><span class="dot"></span><span>Pra quem prefere absorver um jeito de pensar a colecionar prompts soltos.</span></li>
           </ul>
           <div class="actions">
-            <a class="button" href="#preco">Quero destravar meu jeito de construir</a>
-            <a class="button secondary" href="#processo">Ver como funciona</a>
+            <a class="button" href="#preco">Entrar no Modo Arquiteto</a>
+            <a class="button secondary" href="#inclui">Ver o que vem dentro</a>
           </div>
-          <div class="microcopy">Preço de lançamento: R$147. Não são 48 horas de aula; é um processo para você assistir, copiar e aplicar.</div>
+          <div class="microcopy">R$147 no lançamento. Acesso imediato assim que o checkout entrar no ar.</div>
         </div>
 
         <aside class="product-card" aria-label="Visual do produto">
@@ -665,49 +633,17 @@
                 <path d="M8 5v14l11-7z" fill="#f6f1e8"/>
               </svg>
             </div>
-            <h3>Veja a construção acontecendo.</h3>
-            <p>Não é teoria sobre IA. É bastidor de build: do pensamento inicial ao sistema rodando.</p>
+            <h3>Construção real, do meu jeito.</h3>
+            <p>Não é demo nem teoria. É a build de um sistema que vai pro ar, com tudo que passa pela minha cabeça enquanto faço.</p>
           </div>
 
           <div class="process-board">
-            <div class="process-step"><strong>01</strong><span>Ideia solta vira direção clara.</span></div>
-            <div class="process-step"><strong>02</strong><span>Direção vira plano que a IA entende.</span></div>
-            <div class="process-step"><strong>03</strong><span>Plano vira sistema funcionando.</span></div>
-            <div class="process-step"><strong>04</strong><span>Você entende como adaptar para seu caso.</span></div>
+            <div class="process-step"><strong>01</strong><span>Eu mostro o problema e por que decidi resolver assim.</span></div>
+            <div class="process-step"><strong>02</strong><span>A gente decide o que fica e o que corta.</span></div>
+            <div class="process-step"><strong>03</strong><span>Eu construo. Você vê os prompts, os erros e os ajustes.</span></div>
+            <div class="process-step"><strong>04</strong><span>No fim, o sistema tá rodando — e você sai com o método.</span></div>
           </div>
         </aside>
-      </div>
-
-      <div class="shell">
-        <div class="stats">
-          <div class="stat"><strong>1 build real</strong><span>para ver o processo inteiro por dentro.</span></div>
-          <div class="stat"><strong>48h</strong><span>como janela prática para destravar e aplicar.</span></div>
-          <div class="stat"><strong>R$147</strong><span>preço de lançamento para a primeira versão.</span></div>
-          <div class="stat"><strong>2 caminhos</strong><span>produto/SaaS ou automação do negócio.</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="dor">
-      <div class="shell">
-        <div class="section-head">
-          <h2>Você não precisa de mais uma ferramenta. Precisa entender o jogo.</h2>
-          <p>A dor real não é técnica. É sentar para construir e perceber que você não sabe por onde começar, que prompt usar, que escopo pedir, que decisão tomar ou quando confiar na IA.</p>
-        </div>
-        <div class="grid cols-3">
-          <div class="panel">
-            <h3>Você vê o potencial, mas não sente controle</h3>
-            <p>A ferramenta parece uma Ferrari. Só que, na prática, você ainda não sente que sabe ligar, acelerar e guiar.</p>
-          </div>
-          <div class="panel">
-            <h3>Você gera pedaços, mas não constrói algo inteiro</h3>
-            <p>Uma tela aqui, um código ali, uma ideia no chat. Mas falta o caminho para transformar isso em sistema útil.</p>
-          </div>
-          <div class="panel">
-            <h3>Você quer ver alguém fazendo de verdade</h3>
-            <p>Não só ouvir conceitos. Ver o raciocínio, as decisões, os prompts e as correções enquanto a coisa nasce.</p>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -716,11 +652,11 @@
         <div class="grid cols-2">
           <div class="panel dark">
             <h3>A virada</h3>
-            <p class="quote">Você não destrava IA coding decorando prompt. Você destrava vendo um processo bom acontecendo e copiando o raciocínio.</p>
+            <p class="quote">Construir bem com Claude Code é menos sobre o prompt e mais sobre quem tá segurando o leme.</p>
           </div>
           <div class="panel teal">
-            <h3>É isso que o Sistema em 48h entrega</h3>
-            <p>Você entra no meu fluxo de construção: como eu penso, como eu dou contexto, como eu corto escopo, como eu converso com a IA e como eu saio de ideia para sistema.</p>
+            <h3>É isso que o Modo Arquiteto entrega</h3>
+            <p>Eu te coloco dentro do meu jeito de operar — como eu leio um problema, dou contexto pro Claude, corto escopo, conduzo a build e fecho. Workspace, skills e os vídeos da construção são a forma de te entregar isso embalado.</p>
           </div>
         </div>
       </div>
@@ -730,15 +666,15 @@
       <div class="shell story">
         <div class="story-inner">
           <div class="story-copy">
-            <h2>O projeto construído é só o veículo. O valor é ver meu processo.</h2>
-            <p>Durante a imersão, eu construo um sistema real do zero. O tema específico não é o ponto principal. O ponto é você enxergar o caminho: como uma ideia vira direção, como direção vira arquitetura e como arquitetura vira algo funcionando com IA.</p>
-            <p>Depois você usa o mesmo raciocínio para produto, automação ou ferramenta interna.</p>
+            <h2>O que eu vou construir nessa rodada.</h2>
+            <p>Um sistema pra automatizar um setor inteiro da minha empresa. Eu precisava resolver isso de verdade — então transformei a construção em produto. Você vê tudo: a estrutura inicial, as decisões de escopo, como eu instruo o Claude Code, onde eu corto, onde eu insisto.</p>
+            <p>O sistema é o exemplo concreto. O que você leva é o método — o mesmo que eu uso pra qualquer coisa que construo. Produto, automação, ferramenta interna. A casca muda, o raciocínio é o mesmo.</p>
           </div>
           <div class="story-flow">
-            <div class="flow-step"><strong>01</strong><span>O que vale construir e o que cortar.</span></div>
-            <div class="flow-step"><strong>02</strong><span>Como transformar pensamento em contexto para IA.</span></div>
-            <div class="flow-step"><strong>03</strong><span>Como pedir a build sem virar prompt solto.</span></div>
-            <div class="flow-step"><strong>04</strong><span>Como revisar, corrigir e adaptar para seu caso.</span></div>
+            <div class="flow-step"><strong>01</strong><span>Definir o problema (e o que NÃO vai entrar na v1).</span></div>
+            <div class="flow-step"><strong>02</strong><span>Montar contexto pro Claude Code não sair voando.</span></div>
+            <div class="flow-step"><strong>03</strong><span>Construir em ciclos curtos com revisão honesta.</span></div>
+            <div class="flow-step"><strong>04</strong><span>Adaptar o método pro seu próprio caso.</span></div>
           </div>
         </div>
       </div>
@@ -747,25 +683,25 @@
     <section id="inclui">
       <div class="shell">
         <div class="section-head">
-          <h2>O que você recebe</h2>
-          <p>O produto foi pensado para você assistir, entender o raciocínio e ter material para aplicar no seu próprio projeto depois.</p>
+          <h2>O que vem dentro</h2>
+          <p>O Modo Arquiteto é um pacote: você assiste, entende como eu penso e leva o material pra aplicar no seu próprio projeto.</p>
         </div>
 
         <div class="grid cols-2">
           <div class="included-list">
-            <div class="included-item"><strong>Build Session completa</strong><span>Você acompanha a construção de um sistema real e entende as decisões por trás de cada etapa.</span></div>
-            <div class="included-item"><strong>Workspace Arquiteto</strong><span>O repositório/template com estrutura, memória de projeto e instruções para começar com mais direção.</span></div>
-            <div class="included-item"><strong>Prompts e checklists</strong><span>Material para transformar ideia em escopo, escopo em plano e plano em build.</span></div>
-            <div class="included-item"><strong>Skills curadas</strong><span>Uma base de skills para pensar, construir, revisar, escrever e testar com IA.</span></div>
+            <div class="included-item"><strong>As gravações da build</strong><span>Você acompanha a construção do sistema do começo ao fim, com o raciocínio em cima de cada decisão e os atalhos que eu fui descobrindo no caminho.</span></div>
+            <div class="included-item"><strong>Workspace Arquiteto</strong><span>O repositório-template que eu uso, com estrutura, memória de projeto e instruções pro Claude Code começar com mais direção.</span></div>
+            <div class="included-item"><strong>Prompts e checklists</strong><span>O material que transforma ideia em escopo, escopo em plano e plano em build sem virar prompt solto.</span></div>
+            <div class="included-item"><strong>Skills curadas</strong><span>A base de skills que faz o Claude Code pensar do meu jeito — pra construir, revisar, escrever e testar.</span></div>
           </div>
           <div class="panel amber">
-            <h3>O que você deve sair entendendo</h3>
+            <h3>O que você leva na cabeça</h3>
             <ul>
-              <li>Como começar quando a ideia ainda está vaga.</li>
-              <li>Como usar a IA para pensar junto, não só executar.</li>
+              <li>Como começar quando a ideia ainda tá vaga.</li>
+              <li>Como usar o Claude Code pra pensar com você, não só executar.</li>
               <li>Como conduzir uma build sem se perder no meio.</li>
-              <li>Como adaptar o mesmo processo para produto ou automação.</li>
-              <li>Como parar de sentir que está usando só 10% da ferramenta.</li>
+              <li>Como adaptar o mesmo processo pra produto, automação ou ferramenta interna.</li>
+              <li>O que eu já aprendi sobre IA que poupa semanas de tentativa cega.</li>
             </ul>
           </div>
         </div>
@@ -775,27 +711,27 @@
     <section>
       <div class="shell">
         <div class="section-head">
-          <h2>Para quem é</h2>
-          <p>A pessoa certa para esse produto quer destravar construção com IA. Não quer só assistir aula, nem comprar promessa de dinheiro fácil.</p>
+          <h2>Pra quem é</h2>
+          <p>Pessoa que já tá no jogo do Claude Code e quer um jeito mais inteligente e estratégico de operar — não um curso de programação do zero.</p>
         </div>
         <div class="grid cols-2">
           <div class="panel teal">
-            <h3>É para você se...</h3>
+            <h3>É pra você se...</h3>
             <ul>
-              <li>você vê o Lucas construindo sistemas e quer entender como ele pensa;</li>
-              <li>você quer criar um produto, automação ou ferramenta interna;</li>
-              <li>você sente que Claude Code/Codex ainda não clicou para você;</li>
-              <li>você quer um processo para sair da ideia e chegar na primeira versão;</li>
-              <li>você prefere ver alguém construindo do que assistir teoria solta.</li>
+              <li>você acompanha meu trabalho e quer ver como eu construo de fato;</li>
+              <li>você já usa Claude Code mas sente que tá no modo autodidata caótico;</li>
+              <li>você quer um workspace pronto pra parar de configurar do zero toda vez;</li>
+              <li>você prefere ver alguém construindo a ouvir teoria solta;</li>
+              <li>você quer um sistema seu rodando, não um certificado.</li>
             </ul>
           </div>
           <div class="panel amber">
-            <h3>Não é para você se...</h3>
+            <h3>Não é pra você se...</h3>
             <ul>
-              <li>você quer uma promessa de SaaS milionário em dois dias;</li>
-              <li>você espera que a IA pense por você sem contexto nenhum;</li>
-              <li>você procura uma mentoria individual;</li>
-              <li>você não quer abrir o computador e praticar;</li>
+              <li>você quer promessa de SaaS milionário em dois dias;</li>
+              <li>você nunca abriu o Claude Code (esse aqui pressupõe que você já tá mexendo);</li>
+              <li>você quer mentoria 1-a-1;</li>
+              <li>você não vai abrir o computador pra praticar;</li>
               <li>você quer um curso longo de programação tradicional.</li>
             </ul>
           </div>
@@ -807,24 +743,23 @@
       <div class="shell">
         <div class="section-head">
           <h2>Acesso de lançamento</h2>
-          <p>R$147 deixa a oferta leve o bastante para bio, destaques e tráfego direto, sem parecer um PDF barato. A promessa é clara: destravar seu jeito de construir com IA.</p>
+          <p>R$147 pra entrar agora. O preço sobe conforme o produto evolui.</p>
         </div>
 
         <div class="pricing">
           <div class="price-card">
-            <div class="price-label">Primeira versão / lote de lançamento</div>
+            <div class="price-label">Lote de lançamento</div>
             <div class="price">R$147 <small>depois R$197</small></div>
-            <p>Acesso ao Sistema em 48h com build session, workspace, prompts, checklists e skills curadas. O preço sobe conforme o produto evoluir.</p>
-            <a class="button" href="#checkout">Quero acessar o Sistema em 48h</a>
-            <div class="microcopy" style="color:rgba(246,241,232,.62)">Trocar este botão pelo link do checkout quando estiver pronto.</div>
+            <p>Acesso completo ao Modo Arquiteto: a build session gravada, o Workspace Arquiteto, os prompts, as checklists e as skills curadas.</p>
+            <a class="button" href="#checkout">Garantir acesso por R$147</a>
           </div>
           <div class="panel">
             <h3>Inclui</h3>
             <ul class="check-list">
-              <li><span class="check">✓</span><span>Build Session gravada mostrando o processo por dentro.</span></li>
-              <li><span class="check">✓</span><span>Workspace Arquiteto no GitHub.</span></li>
-              <li><span class="check">✓</span><span>Prompts e checklists para começar seu próprio projeto.</span></li>
-              <li><span class="check">✓</span><span>Skills curadas para pensar, construir, revisar e testar.</span></li>
+              <li><span class="check">✓</span><span>Build session gravada com o sistema sendo construído do zero.</span></li>
+              <li><span class="check">✓</span><span>Workspace Arquiteto disponível no GitHub.</span></li>
+              <li><span class="check">✓</span><span>Prompts e checklists pra começar seu próprio projeto.</span></li>
+              <li><span class="check">✓</span><span>Skills curadas pra construir, revisar, escrever e testar.</span></li>
               <li><span class="check">✓</span><span>7 dias de garantia.</span></li>
             </ul>
           </div>
@@ -836,42 +771,42 @@
       <div class="shell">
         <div class="section-head">
           <h2>Perguntas frequentes</h2>
-          <p>As respostas precisam deixar claro que o produto é prático, direto e honesto sobre o resultado.</p>
+          <p>Direto ao ponto, sem promessa fácil.</p>
         </div>
 
         <details>
-          <summary>São 48 horas de aula?</summary>
-          <p>Não. 48h é a janela prática da promessa: assistir, entender o processo e começar a aplicar. A entrega é uma imersão gravada, direta e prática, não um curso gigante.</p>
+          <summary>Quantas horas de aula tem?</summary>
+          <p>Algumas horas de gravação concentrada. A ideia não é durar muito — é entregar o método rápido e te deixar livre pra aplicar. Você assiste no seu ritmo.</p>
         </details>
         <details>
           <summary>Preciso saber programar?</summary>
-          <p>Não precisa ser programador. Mas você precisa estar disposto a pensar, seguir o processo e praticar. O produto não vende delegação cega; vende direção.</p>
+          <p>Não precisa ser programador. Mas precisa estar disposto a pensar e seguir o processo. O Modo Arquiteto não vende delegação cega; vende direção.</p>
         </details>
         <details>
-          <summary>Funciona com Codex, Cursor ou Antigravity?</summary>
-          <p>Sim. A ferramenta principal pode variar. O que você está comprando é o processo: como pensar, dar contexto, cortar escopo, pedir, revisar e adaptar.</p>
+          <summary>Funciona com Cursor, Windsurf ou só com Claude Code?</summary>
+          <p>Eu construo direto no Claude Code — é a ferramenta principal e a mais bem servida pelos prompts e skills que vão dentro. O método (jeito de pensar, dar contexto, conduzir a build) você consegue levar pra outras ferramentas, mas o pacote tá calibrado pro Claude Code.</p>
         </details>
         <details>
           <summary>Vou conseguir criar meu próprio sistema?</summary>
-          <p>Você vai ver um sistema sendo construído e receber um caminho para aplicar no seu caso. O produto não promete que todo mundo vai sair com o mesmo resultado em dois dias; ele promete clareza, método e um ponto de partida forte.</p>
+          <p>Você vai ver um sistema sendo construído do zero e receber um caminho pra aplicar no seu caso. Não prometo que todo mundo sai com o mesmo resultado — prometo clareza, método e um ponto de partida forte.</p>
         </details>
         <details>
-          <summary>Serve para produto e automação?</summary>
-          <p>Sim. A lógica central é construir um sistema útil com IA. Esse sistema pode virar um produto, uma automação do seu negócio ou uma ferramenta interna.</p>
+          <summary>Serve pra produto e automação?</summary>
+          <p>Serve. A lógica central é construir um sistema útil com Claude Code. Esse sistema pode virar produto, automação interna ou ferramenta da sua empresa.</p>
         </details>
         <details>
           <summary>Tem garantia?</summary>
-          <p>Sugestão: 7 dias. Se você entrar, assistir as primeiras aulas e sentir que aquilo não te deu mais clareza para construir com IA, pode pedir reembolso.</p>
+          <p>Sim. 7 dias. Se você assistir as primeiras aulas e sentir que não te deu mais clareza pra construir, eu devolvo o dinheiro.</p>
         </details>
       </div>
     </section>
 
     <section>
       <div class="shell final-cta" id="checkout">
-        <h2>Entenda como construir com IA do jeito que a ferramenta finalmente começa a fazer sentido.</h2>
-        <p>Entre no Sistema em 48h e veja meu processo por dentro: da ideia solta ao sistema funcionando, com o raciocínio, os prompts e as decisões que você consegue copiar para o seu projeto.</p>
+        <h2>Vem ver como eu uso o Claude Code de verdade.</h2>
+        <p>Sem demo, sem teoria, sem promessa fácil. Você entra no meu workspace, vê uma build acontecendo na sua frente, e sai com o método, as skills e o jeito de pensar.</p>
         <div class="actions">
-          <a class="button" href="#preco">Acessar por R$147</a>
+          <a class="button" href="#preco">Entrar por R$147</a>
           <a class="button secondary" style="color:#fff;border-color:rgba(246,241,232,.24)" href="#inclui">Ver o que vem dentro</a>
         </div>
       </div>
@@ -880,7 +815,7 @@
 
   <footer class="footer">
     <div class="shell">
-      Sistema em 48h. Imersão prática de construção com IA por Lucas Pit. Substituir CTAs pelo link do checkout antes de publicar.
+      Modo Arquiteto. Por Lucas Pit.
     </div>
   </footer>
 </body>
